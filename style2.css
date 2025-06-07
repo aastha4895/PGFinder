@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #4c81af;
+    color: white;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.auth-buttons {
+    display: flex;
+}
+
+.auth-buttons .btn {
+    margin-left: 10px;
+    padding: 10px 15px;
+    background-color: #fff;
+    color: #4c81af;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.logo-image {
+    height: 50px; /* Adjust the height as needed */
+    width: auto; /* Maintain aspect ratio */
+}
+
+
+.hero {
+    background-image: url(https://storage.googleapis.com/a1aa/image/0b9fcfc9-13bc-4de9-a82e-02ad87aa84a8.jpeg); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    position: relative; /* Needed for absolute positioning of dropdowns */
+}
+
+nav ul li {
+    position: relative; /* Needed for absolute positioning of dropdowns */
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block; /* Make the entire area clickable */
+}
+
+.dropdown-content {
+    display: none; /* Hide dropdown by default */
+    position: absolute; /* Position it below the parent */
+    background-color: #ffffff; /* Match the header color */
+    min-width: 200px; /* Set a minimum width */
+    z-index: 1; /* Ensure it appears above other content */
+    padding: 10px; /* Add some padding */
+    border-radius: 4px; /* Rounded corners */
+}
+
+nav ul li:hover .dropdown-content {
+    display: block; /* Show dropdown on hover */
+}
+
+.dropdown-content p {
+    margin: 5px 0; /* Add some margin between items */
+    color: rgb(0, 0, 0); /* Text color */
+}
+
+.hero-content {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.btn-primary {
+    background-color: #FFD700;
+    color: #4CAF50;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}

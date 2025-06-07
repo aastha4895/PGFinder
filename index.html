@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PG Finder</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script> <!-- Link to your script.js -->
+</head>
+<body>
+    <header>
+        <h1>Welcome to PG Finder</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Featured PGs</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Search Bar -->
+<div>
+    <input type="text" id="search" placeholder="Search for PGs..." onkeyup="searchPGs()">
+</div>
+
+    <!-- Sorting Section -->
+<div>
+    <label for="sortOptions">Sort By:</label>
+    <select id="sortOptions">
+        <option value="">Select</option>
+        <option value="location">Location</option>
+        <option value="rent">Rent</option>
+    </select>
+    <button onclick="sortPGs()">Sort</button>
+</div>
+
+
+    <div id="pg-list">
+        <!-- PG listings will be here -->
+        <div class="pg-item" data-location="City A" data-rent="500">
+            <h2>PG Name 1</h2>
+            <p>Location: City A</p>
+            <p>Rent: Rs. 500</p>
+            <button onclick="viewDetails('PG Name 1')">View Details</button>
+        </div>
+        <div class="pg-item" data-location="City B" data-rent="700">
+            <h2>PG Name 2</h2>
+            <p>Location: City B</p>
+            <p>Rent: Rs. 700</p>
+            <button onclick="viewDetails('PG Name 2')">View Details</button>
+        </div>
+        <div class="pg-item" data-location="City C" data-rent="1000">
+            <h2>PG Name 3</h2>
+            <p>Location: City C</p>
+            <p>Rent: Rs. 1000</p>
+            <button onclick="viewDetails('PG Name 3')">View Details</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+    <!-- Verified PGs Section -->
+    <section id="verified-pgs">
+        <h2>Verified PG Accommodations</h2>
+        <div class="container"> <!-- Flex container -->
+        <div class="pg-list">
+            <div class="pg-item">
+                <h3>PG Name 1</h3>
+                <p>Location: City A</p>
+                <p>Rent: Rs. 500</p>
+                <p>Amenities: Wi-Fi, AC, 24/7 Security</p>
+                <button onclick="window.location.href='details.html?name=PG%20Name%201&location=City%20A&rent=Rs.%20500&amenities=Wi-Fi,AC,24/7%20Security'">View Details</button>
+            </div>
+            <div class="pg-item">
+                <h3>PG Name 2</h3>
+                <p>Location: City B</p>
+                <p>Rent: Rs. 700</p>
+                <p>Amenities: Kitchen, Laundry, Study Area</p>
+                <button onclick="window.location.href='details.html?name=PG%20Name%202&location=City%20B&rent=Rs.%20700&amenities=Kitchen,Laundry,Study%20Area'">View Details</button>
+            </div>
+            <div class="pg-item">
+                <h3>PG Name 3</h3>
+                <p>Location: City C</p>
+                <p>Rent: Rs. 1000</p>
+                <p>Amenities: Gym, Parking, Food Provided</p>
+                <button onclick="window.location.href='details.html?name=PG%20Name%203&location=City%20C&rent=Rs.%201000&amenities=Gym,Parking,Food%20Provided'">View Details</button>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Reviews and Ratings Section -->
+    <section id="reviews">
+        <h2>Reviews from Students</h2>
+        <blockquote>
+            "The PG Finder made it so easy for me to find a safe and comfortable place to stay!"
+            <cite>- Student A</cite>
+        </blockquote>
+        <blockquote>
+            "I love the detailed listings and the reviews from other students!"
+            <cite>- Student B</cite>
+        </blockquote>
+    </section>
+
+    <!-- Secure Booking Section -->
+    <section id="booking">
+        <h2>Secure Booking & Payment</h2>
+        <p>Book your preferred PG accommodation with ease and confidence. We offer secure online booking and payment options.</p>
+    </section>
+
+    <!-- Customer Support Section -->
+    <section id="support">
+        <h2>Customer Support</h2>
+        <p>Need help? Contact our dedicated customer support team through chat, phone, or email.</p>
+    </section>
+
+    <!-- Safety Features Section -->
+    <section id="safety">
+        <h2>Safety Features</h2>
+        <p>All our listed PGs meet high safety standards, including secure entrances, CCTV, and fire safety measures.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 PG Finder</p>
+    </footer>
+
+    <script src="script.js"></script>
+   
+
+</body>
+</html>
+
